@@ -1,0 +1,11 @@
+--- hbaapi_src_2.2/configure.ac.orig	2009-06-11 19:35:50.000000000 +0200
++++ hbaapi_src_2.2/configure.ac	2009-11-04 17:04:44.604051043 +0100
+@@ -4,6 +4,8 @@
+ AC_PROG_CC
+ AC_PROG_LIBTOOL
+ 
++AC_CHECK_LIB(dl, dlopen)
++
+ AC_CONFIG_FILES([Makefile HBAAPI.pc])
+ AC_OUTPUT
+ 
